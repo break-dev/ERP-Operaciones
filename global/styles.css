@@ -1,0 +1,257 @@
+.modal-left {
+	position: fixed;
+	top: 0;
+	left: -300px; /* Inicialmente fuera de la pantalla */
+	width: 300px; /* Ancho del menú */
+	height: 100%; /* Altura completa de la pantalla */
+	background-color: #13181a;
+	box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-out;
+	overflow-y: auto;
+}
+
+.modal.show .modal-left {
+	transform: translateX(300px); /* Desplazar el menú a la derecha al mostrar */
+}
+
+.modal-right {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Inicialmente fuera de la pantalla a la derecha */
+    width: 300px; /* Ancho del modal */
+    height: 100%; /* Altura completa */
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+    overflow-y: auto;
+    z-index: 2000;
+}
+
+/* Cuando el modal está visible, se mueve a la derecha */
+.modal.show .modal-right {
+    transform: translateX(-300px); /* Mover el modal a la derecha de la pantalla */
+}
+.modal-content {
+	border: none;
+	background: white;
+}
+/*
+.modal-header, .modal-body, .modal-footer {
+	padding: 20px;
+}*/
+
+.fondo-login-background{
+	background-image: url('../images/fondo_login.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+}
+
+.fondo-background{
+	background-image: url('../images/fondo_login.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+}
+
+.menu-link {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+/* Elimina el efecto hover */
+.menu-link:hover {
+	background-color: inherit; /* Sin cambio en el fondo */
+	color: inherit; /* Mantiene el color original */
+	border-radius: 0; /* Sin bordes redondeados */
+}
+
+.menu-link i:first-child {
+	font-size: 1.2rem;
+	margin-right: 10px;
+}
+
+/* Rotación de flechas */
+.menu-link .rotate {
+	transition: transform 0.3s ease;
+}
+
+.collapse.show + .menu-link .rotate {
+	transform: rotate(90deg);
+}
+
+.ms-3 {
+	margin-left: 1.5rem;
+}
+
+ul.list-unstyled li {
+	padding: 5px 0;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+/* Fondo original de la mina */
+.fondo-login-background{
+	background-image: url('../images/fondo_login.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+}
+
+.fondo-background{
+	background-image: url('../images/fondo_login.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+}
+
+/* Custom Login Styles - Estilo oscuro e industrial */
+.login-container {
+	position: relative;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.5); /* Overlay oscuro sobre la imagen de la mina */
+}
+
+.login-card {
+	background: rgba(30, 30, 30, 0.7);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 20px; /* Bordes redondeados */
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	width: 100%;
+	max-width: 420px;
+}
+
+.animate-fade-in {
+	animation: fadeIn 0.8s ease-out forwards;
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.logo-container {
+	margin-top: 0; /* Mantenemos el logo dentro de la tarjeta */
+	margin-bottom: 20px;
+}
+
+.login-logo {
+	max-width: 240px; /* Tamaño equilibrado */
+	height: auto;
+	filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.4));
+}
+
+.login-title {
+	font-weight: 700;
+	color: #ffffff;
+	margin-top: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.25rem; /* Proporción adecuada para el título */
+}
+
+.login-subtitle {
+	margin-top: 30px;
+	margin-bottom: -5px;
+	color: #cccccc;
+	font-size: 0.95rem;
+	font-weight: 400;
+}
+
+/* Contenedor principal de los inputs para un borde continuo */
+.input-group.shadow-sm {
+	border: 1px solid rgba(255,255,255,0.1);
+	transition: all 0.3s ease;
+}
+
+.input-group.shadow-sm:focus-within {
+	border-color: #d32f2f;
+	box-shadow: 0 0 10px rgba(211, 47, 47, 0.4) !important;
+}
+
+.login-input {
+	border: none !important;
+	background: rgba(0, 0, 0, 0.6) !important;
+	padding: 12px 15px;
+	font-size: 1rem;
+	color: #ffffff !important;
+}
+.login-input::placeholder {
+	color: #aaaaaa;
+}
+.login-input:focus {
+	box-shadow: none !important;
+	outline: none;
+}
+
+.login-icon-bg {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border: none !important;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.text-red {
+	color: #d32f2f;
+}
+
+.btn-red {
+	background: #d32f2f;
+	border: none;
+	border-radius: 12px;
+	color: white;
+	font-weight: 600;
+	font-size: 0.95rem; /* Tamaño de letra reducido */
+	padding: 12px;
+	box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+	transition: all 0.2s ease;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.btn-red:hover, .btn-red:focus {
+	background: #b71c1c;
+	transform: translateY(-1px);
+	box-shadow: 0 6px 20px rgba(211, 47, 47, 0.5);
+	color: white;
+}
+
+.btn-red:active {
+	transform: translateY(1px);
+	box-shadow: 0 2px 10px rgba(211, 47, 47, 0.3);
+}
+
+.forgot-password-link {
+	color: #d32f2f;
+	font-size: 0.9rem;
+	font-weight: 500;
+	cursor: pointer;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover {
+	color: #ffffff;
+}
+
+.empresa-footer {
+	font-size: 0.8rem;
+	color: #888888;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
