@@ -216,14 +216,14 @@ $html = '
 <body>
 
     <!-- Watermark -->
-    <img src="' . $ruta_images . 'empresa/logo.jpeg" class="watermark">
+    <img src="' . $ruta_images . 'empresa/logo_fake.jpeg" class="watermark">
 
     <!-- Header -->
     <div style="margin-bottom: 0px;">
         <table class="header-table">
             <tr>
                 <td style="width: 25%; vertical-align: bottom;">
-                    <img src="' . $ruta_images . 'empresa/logo_horizontal.jpeg" style="width: 180px;">
+                    <img src="' . $ruta_images . '/aas.png" style="width: auto; height: 50px;">
                 </td>
                 <td style="width: 50%; text-align: center; vertical-align: bottom; padding-bottom: 5px;">
                      <span style="font-size: 16px; font-weight: bold; text-decoration: underline;">VALORIZACIÓN DE MINERAL</span>
@@ -488,7 +488,7 @@ $html .= '
                      <div style="height: 110px;">
                           <!-- Logo -->
                           <div style="margin-bottom: 5px;">
-                             <img src="' . $ruta_images . 'empresa/logo_horizontal.jpeg" style="width: 120px;">
+                             <img src="' . $ruta_images . '/empresa/logo_fake.png" style="width: auto; height: 50px;">
                           </div>
                           <!-- Firma superpuesta con margen negativo -->
                           <div style="margin-top: -40px;">
