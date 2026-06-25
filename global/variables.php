@@ -3,7 +3,7 @@
 	// Url's
 		$base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']);
 
-		$url_images = $base_url . 'images/';
+		$url_images = 'images/';
 		$url_lims = $base_url;
 
 	// Variables

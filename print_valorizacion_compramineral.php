@@ -501,7 +501,7 @@ $html .= '
                      <div style="font-size: 8px; font-weight: bold;">LIQUIDACIONES</div>
                      
                      <div style="margin-top: 10px; font-size: 8px; text-align: left; height: 35px;">
-                        PLANTA DE BENEFICIO BEIJING S.A.C. - LIQUIDACIONES<br>
+                        PLANTA DE BENEFICIO INTELLI S.A.C. - LIQUIDACIONES<br>
                         NOMBRE: MARICELA CASTILLO A.<br>
                         DNI: 18080165
                      </div>

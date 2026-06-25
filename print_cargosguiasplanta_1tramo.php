@@ -113,7 +113,7 @@
 											<tr style="font-size: 14px;">
 												<td style="text-align: left; vertical-align: top; max-width: 10%;">
 													<div style="font-family: AgencyFB; font-size: 16px;">
-														GRUPO EMPRESARIAL LUBRA S.A.C.
+														GRUPO EMPRESARIAL INTELLI S.A.C.
 													</div>
 												</td>
 											</tr>

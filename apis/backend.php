@@ -8,18 +8,20 @@ include "../global/variables.php";
 
 ini_set("memory_limit", "1024M");
 
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
 
-error_reporting(0);
-ini_set('display_errors', 0);
-ini_set('display_startuo_errors', 0);
 
 // Seteando librería para importar Excels
 require "vendor/autoload.php";
 
 // Para obtener el valor de las columnas de Excel
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+
+error_reporting(0);
+ini_set('display_errors', 0);
+ini_set('display_startuo_errors', 0);
 
 // Permite obtener el nombre de cada mes
 function nombre_meses($num_mes)
@@ -4076,9 +4078,9 @@ switch ($_POST["accion"]) {
 		// Recupera parámetros
 		$user = mysqli_real_escape_string($enlace, $_POST["user"]);
 		$password = mysqli_real_escape_string($enlace, md5($_POST["password"]));
-		$id_sucursal = $_POST["id_sucursal"];
-		$cod_sucursal = $_POST["cod_sucursal"] ?? '';
-		$des_sucursal = $_POST["des_sucursal"] ?? '';
+		$id_sucursal = $_POST["id_sucursal"] ?? 1;
+		$cod_sucursal = $_POST["cod_sucursal"] ?? 'BH';
+		$des_sucursal = $_POST["des_sucursal"] ?? 'PLANTA HUANCHACO';
 
 		// Valida Credenciales
 		$q_login =

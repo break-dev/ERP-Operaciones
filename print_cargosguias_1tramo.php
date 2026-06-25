@@ -214,7 +214,7 @@
 		while ($d <= 2){
 			$html .= '<div class="row" style="margin-top: 30px;">
 									<label style="font-family: AgencyFB; font-size: 16px;">
-										GRUPO EMPRESARIAL LUBRA S.A.C.
+										GRUPO EMPRESARIAL INTELLI S.A.C.
 									</label>
 								</div>
 

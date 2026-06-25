@@ -693,7 +693,7 @@ $html .= '    <div style="width: 100%; margin-top: -30px; text-align: center;">
                             <hr style="color: #000000; margin-top: -10px;">
 
                             <div style="margin-top: 5px; height: 20px; font-weight: bold;">
-                              GRUPO EMPRESARIAL LUBRA SAC - RUC: 20612353183
+                              GRUPO EMPRESARIAL INTELLI SAC
                             </div>
                           </td>
 

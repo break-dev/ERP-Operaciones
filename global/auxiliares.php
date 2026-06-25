@@ -10,7 +10,7 @@ $navbar_maintop = '
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   .gelsac-navbar {
-      background: rgba(20, 20, 20, 0.85);
+      background: rgba(20, 20, 20);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       box-shadow: 0 4px 15px rgba(0,0,0,.6);
@@ -67,7 +67,7 @@ $navbar_maintop = '
       pointer-events: none;
       white-space: nowrap;
   }
-  .gelsac-nav-center span { color: #d32f2f; font-weight: 700; }
+  .gelsac-nav-center span { color: #60ffafff; font-weight: 700; }
 .gelsac-nav-right {
     display: flex;
     align-items: center;
